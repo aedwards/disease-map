@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" width="632" height="350" x="50" y="50" 
+			   title="Directions for Agents Map" close="closeHandler(event)">
+	
+	<fx:Script>
+		<![CDATA[
+			import flashx.textLayout.conversion.TextConverter;
+			
+			import mx.controls.Alert;
+			import mx.events.CloseEvent;
+			import mx.managers.PopUpManager;
+			
+			import spark.utils.TextFlowUtil;
+			
+			
+			private function closeHandler(event:CloseEvent):void {
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		
+		<fx:String id="htmlMarkup">
+			<![CDATA[
+			<p>
+			<b>Countries and Agent labels:</b>
+			  As you move your mouse over the map, country names will pop up. Place your cursor on one of the colored dots to see the associated 
+			select agent name. Each dot signals that a disease outbreak caused by that agent was observed in that country during the 22-month period surveyed.
+			It is not necessary to click on countries or dots to see pop-up labels. (<b>Note:</b> The placement of dots on the map <b>does</b> not correspond 
+			to the location of an outbreak—we have made no attempt to represent the specific location of disease outbreaks. Rather, the dots merely indicate 
+			the presence of an outbreak caused by a specific pathogen in a given country.) 
+			</p>
+			
+			<br />
+			
+			<p>
+			<b>Zoom:</b>  Use the scrolling zoom feature on the left to zoom in or out as you view the map.
+			</p>
+			
+			<br />
+			
+			<p>
+			<b>Customize your view:</b>  Use the controls below the map to customize your view:<br /><br />
+			<pre>
+			     &#x2022; Click on <b>Countries</b> to view a list of all countries and to select those you would like to view at the same time.<br />
+			     &#x2022; Click on <b>Diseases</b> to view a list of all agents and to choose those you are interesting in seeing on the map.<br />
+			     &#x2022; Click on <b>Toggle Selections</b> to clear all choices in either list.<br />
+			</pre>
+			</p>
+			]]> 
+		</fx:String>
+		
+	</fx:Declarations>
+	
+	<s:RichText id="richTxt" textFlow="{TextConverter.importToFlow(htmlMarkup, TextConverter.TEXT_FIELD_HTML_FORMAT)}" x="10" y="10" width="600" height="297" />
+	
+</s:TitleWindow>
