@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fxpProperties abbreviated="false" authoringTool="Flex Builder" compiles="true" parentProject="80baad46-a72c-48a7-b81f-18d4e9368959" projectUUID="80baad46-a72c-48a7-b81f-18d4e9368959" sdkVersion="4.1.0" uuid="538c0992-bf16-4407-8a60-b68d6f4b4aaa" version="4">
+  <projects/>
+  <src/>
+  <swc>
+    <linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="538c0992-bf16-4407-8a60-b68d6f4b4aaa"/>
+    <linked location="G:/Davia/Disease_Map/disease-map/libs" path="/libs" position="1" uuid="538c0992-bf16-4407-8a60-b68d6f4b4aaa"/>
+  </swc>
+  <misc/>
+  <theme/>
+</fxpProperties>
