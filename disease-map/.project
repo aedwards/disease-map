@@ -46,5 +46,10 @@
 			<type>2</type>
 			<location>G:/Davia/Disease-Map-Build-Release-4</location>
 		</link>
+		<link>
+			<name>bin-release7</name>
+			<type>2</type>
+			<location>G:/Davia/Disease-Map-Build-Release-4-5</location>
+		</link>
 	</linkedResources>
 </projectDescription>
