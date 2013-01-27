@@ -1,4 +1,4 @@
-disease-map
+Select Agent Pathogen Map
 ===========
 
 Select Agent Pathogen Map created in Flex for Center for Biosecurity
